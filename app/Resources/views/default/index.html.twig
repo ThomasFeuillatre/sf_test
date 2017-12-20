@@ -1,0 +1,20 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <p>Hello World  </p>
+
+    {% for 	article in listArticle %}
+    	<p>{{	article.title}} : {{article.content}} by {{article.author.name}}</p>
+    {% endfor %}
+    <p><a href="{{path("about")}}">About</a></p>
+{% endblock %}
+
+{% block stylesheets %}
+
+{% endblock %}
+
+{% block title %}
+
+    Hello
+
+{% endblock %}
